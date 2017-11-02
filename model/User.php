@@ -97,9 +97,9 @@ class User{
     public function delete($tabela, $where){
         $sql = " DELETE FROM  $tabela WHERE $where ";
         $delete = $this->db->query($sql);
-        if($delete)
+        if($delete) {
             return true;
-        else {
+        }else {
             return false;
         }
     }
