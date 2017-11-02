@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a4213e2-275b-4d8b-9fe0-3b949f2e1ce8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user_edit.php" afterPath="$PROJECT_DIR$/views/user_edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user_list.php" afterPath="$PROJECT_DIR$/views/user_list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user_new.php" afterPath="$PROJECT_DIR$/views/user_new.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Salas.php" afterPath="$PROJECT_DIR$/model/Salas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/salas.php" afterPath="$PROJECT_DIR$/salas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/salas.php" afterPath="$PROJECT_DIR$/views/salas.php" />
     </list>
     <ignored path="digitec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="-1725">
               <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
@@ -39,48 +38,41 @@
       <file leaf-file-name="salas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="512">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user_list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="77" column="45" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user_edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="salas.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="salas.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/salas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="416">
+              <caret line="100" column="65" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_new.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/user_new.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+            <state relative-caret-position="-384">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
+                <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Salas.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Salas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-320">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -102,11 +94,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/views/register.phtml" />
-        <option value="$PROJECT_DIR$/model/Salas.php" />
         <option value="$PROJECT_DIR$/views/reservas.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/views/register.php" />
-        <option value="$PROJECT_DIR$/salas.php" />
         <option value="$PROJECT_DIR$/views/user_lista.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/model/User.php" />
@@ -115,6 +105,8 @@
         <option value="$PROJECT_DIR$/views/user_list.php" />
         <option value="$PROJECT_DIR$/views/user_edit.php" />
         <option value="$PROJECT_DIR$/views/user_new.php" />
+        <option value="$PROJECT_DIR$/salas.php" />
+        <option value="$PROJECT_DIR$/model/Salas.php" />
         <option value="$PROJECT_DIR$/views/salas.php" />
       </list>
     </option>
@@ -286,12 +278,12 @@
       <workItem from="1509485174503" duration="8966000" />
       <workItem from="1509568083444" duration="20476000" />
       <workItem from="1509588635199" duration="1039000" />
-      <workItem from="1509624959590" duration="260000" />
+      <workItem from="1509624959590" duration="1691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30741000" />
+    <option name="totallyTimeSpent" value="32172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -412,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Salas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/reservas.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -432,17 +417,6 @@
         <state relative-caret-position="32">
           <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1568">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding>
-            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -460,26 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user.php">
+    <entry file="file://$PROJECT_DIR$/views/user_new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/salas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/salas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="50" />
+        <state relative-caret-position="1056">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -494,16 +452,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/user_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="45" />
+        <state relative-caret-position="259">
+          <caret line="71" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user_new.php">
+    <entry file="file://$PROJECT_DIR$/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+        <state relative-caret-position="-1725">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Salas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/salas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="100" column="65" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
           <folding />
         </state>
       </provider>

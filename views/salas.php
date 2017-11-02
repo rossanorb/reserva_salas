@@ -4,12 +4,62 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
 
-    <title>Fancy Sidebar Navigation - Bootsnipp.com</title>
+    <title>Salas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="asssets/css/salas.css">
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-top: 30px;
+        }
+
+        .widget .panel-body {
+            padding: 0px;
+        }
+
+        .widget .list-group {
+            margin-bottom: 0;
+        }
+
+        .widget .panel-title {
+            display: inline
+        }
+
+        .widget .label-info {
+            float: right;
+        }
+
+        .widget li.list-group-item {
+            border-radius: 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .widget li.list-group-item:hover {
+            background-color: rgba(86, 61, 124, .1);
+        }
+
+        .widget .mic-info {
+            color: #666666;
+            font-size: 15px;
+        }
+
+        .widget .action {
+            margin-top: 5px;
+        }
+
+        .widget .comment-text {
+            font-size: 12px;
+        }
+
+        .widget .btn-block {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    </style>
 
 </head>
 <body>
@@ -25,7 +75,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">Salas</a>
+                <a href="salas.php">Salas</a>
             </li>
             <li>
                 <a href="user.php?action=lista">Usuários</a>
@@ -44,13 +94,50 @@
         </button>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h1>Fancy Toggle Sidebar Navigation</h1>
-                    <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
-                    <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
-                    <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
-                    <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
-                    <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>
+                <div class="col-lg-12">
+
+                    <div class="panel panel-default widget">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-book"></span>
+                            <h3 class="panel-title">Salas</h3>
+                            <span class="label label-info"><?= count($salas) ?></span>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <?php foreach ($salas as $sala): ?>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-xs-10 col-md-11">
+
+                                                <div>
+                                                    <?= $sala['nome'] ?>
+                                                    <div class="mic-info">
+                                                       sala: <b><?= $sala['numero'] ?></b>
+                                                    </div>
+                                                </div>
+                                                <!--<div class="comment-text">
+                                                    Awesome design
+                                                </div>
+                                                -->
+                                                <div class="action">
+                                                    <a href="salas.php?action=edit&id=<?= $sala['id'] ?>"
+                                                       class="btn btn-primary btn-xs" title="Edit"><span
+                                                            class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a href="salas.php?action=new" class="btn btn-success btn-xs"
+                                                       title="New"><span class="glyphicon glyphicon-ok"></span></a>
+                                                    <a href="salas.php?action=delete&id=<?= $sala['id'] ?>"
+                                                       class="btn btn-danger btn-xs" title="Delete"><span
+                                                            class="glyphicon glyphicon-trash"></span></a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
