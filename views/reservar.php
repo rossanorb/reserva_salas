@@ -137,6 +137,38 @@
 </div>
 <!-- /#wrapper -->
 <script type="text/javascript">
+
+    function busca_horarios(date) {
+        $.ajax({
+            url: 'reservas.php',
+            type: 'GET',
+            data:{
+                action: 'consultar',
+                date: date
+            },
+            success: function(result) {
+
+            },
+            statusCode: {
+                404: function() {
+                    console.log('recurso não disponível')
+                },
+                419: function() {
+                    console.log('status desconhecido')
+                },
+                403: function() {
+                    console.log('sem permissão')
+                },
+                500: function() {
+                    console.log('erro interno')
+                }
+            }
+
+        }).done(function( data ) {
+
+        });
+    }
+
     $(document).ready(function () {
 
         $('#datetimepicker12').datetimepicker({
@@ -147,6 +179,7 @@
 
         $("#datetimepicker12").on("dp.change", function (e) {
             let date = $('#datetimepicker12 td.day.active').attr('data-day')
+            busca_horarios(date);
         });
 
         var trigger = $('.hamburger'),
