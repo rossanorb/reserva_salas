@@ -70,6 +70,22 @@
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
         }
+
+        #datetimepicker{
+
+        }
+
+        .reservas{
+            margin-top: 15px;
+        }
+
+        div.hora {
+            background: #66c03733;
+            border: 1px solid #b5c2aecc;
+            padding: 1%;
+            margin: 1%;
+            cursor: pointer;
+        }
     </style>
 
 </head>
@@ -116,16 +132,18 @@
                             <div class="col-lg-12">
                                 <div style="overflow:hidden;">
                                     <div class="form-group">
-                                        <div class="row">
+                                        <div class="row reservas">
                                             <div class="col-md-8">
-                                                <div id="datetimepicker12"></div>
+                                                <div id="datetimepicker"></div>
+                                            </div>
+                                            <div class="col-md-4 lista-horarios">
+
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="col-lg-12"></div>
                         </div>
                     </div>
                 </div>
@@ -136,51 +154,9 @@
 
 </div>
 <!-- /#wrapper -->
+<script type="text/javascript" src="asssets/js/reservas.js"></script>
 <script type="text/javascript">
-
-    function busca_horarios(date) {
-        $.ajax({
-            url: 'reservas.php',
-            type: 'GET',
-            data:{
-                action: 'consultar',
-                date: date
-            },
-            success: function(result) {
-
-            },
-            statusCode: {
-                404: function() {
-                    console.log('recurso não disponível')
-                },
-                419: function() {
-                    console.log('status desconhecido')
-                },
-                403: function() {
-                    console.log('sem permissão')
-                },
-                500: function() {
-                    console.log('erro interno')
-                }
-            }
-
-        }).done(function( data ) {
-
-        });
-    }
-
     $(document).ready(function () {
-
-        $('#datetimepicker12').datetimepicker({
-            locale: 'pt-BR',
-            inline: true,
-            format: 'DD/MM/YYYY'
-        });
-
-        $("#datetimepicker12").on("dp.change", function (e) {
-            let date = $('#datetimepicker12 td.day.active').attr('data-day')
-            busca_horarios(date);
-        });
 
         var trigger = $('.hamburger'),
             overlay = $('.overlay'),
