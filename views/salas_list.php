@@ -32,6 +32,11 @@
             float: right;
         }
 
+        .widget .btn-new {
+            float: right;
+            margin-right: 1%;
+        }
+
         .widget li.list-group-item {
             border-radius: 0;
             border: 0;
@@ -101,6 +106,7 @@
                             <span class="glyphicon glyphicon-book"></span>
                             <h3 class="panel-title">Salas</h3>
                             <span class="label label-info"><?= count($salas) ?></span>
+                            <a href="salas.php?action=new" class="btn btn-success btn-xs btn-new" title="New"><span class="glyphicon glyphicon-plus"></span></a>
                         </div>
                         <div class="panel-body">
                             <ul class="list-group">
@@ -120,14 +126,8 @@
                                                 </div>
                                                 -->
                                                 <div class="action">
-                                                    <a href="salas.php?action=edit&id=<?= $sala['id'] ?>"
-                                                       class="btn btn-primary btn-xs" title="Edit"><span
-                                                            class="glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="salas.php?action=new" class="btn btn-success btn-xs"
-                                                       title="New"><span class="glyphicon glyphicon-ok"></span></a>
-                                                    <a href="salas.php?action=delete&id=<?= $sala['id'] ?>"
-                                                       class="btn btn-danger btn-xs" title="Delete"><span
-                                                            class="glyphicon glyphicon-trash"></span></a>
+                                                    <a href="salas.php?action=edit&id=<?= $sala['id'] ?>" class="btn btn-primary btn-xs" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a href="salas.php?action=delete&id=<?= $sala['id'] ?>" class="btn btn-danger btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></a>
                                                 </div>
 
 
