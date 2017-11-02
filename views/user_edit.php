@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">Salas</a>
+                <a href="salas.php">Salas</a>
             </li>
             <li>
                 <a href="user.php?action=lista">Usuários</a>
