@@ -94,6 +94,7 @@
                                             </div>
 
                                             <input id="btn-login" class="btn btn-success" value="Salvar" type="submit">
+                                            <a href="user.php" class="btn btn-primary">Listar Usuários</a>
                                         </form>
 
 
