@@ -104,39 +104,10 @@
                     <div class="panel panel-default widget">
                         <div class="panel-heading">
                             <span class="glyphicon glyphicon-book"></span>
-                            <h3 class="panel-title">Salas</h3>
-                            <span class="label label-info"><?= count($salas) ?></span>
-                            <a href="salas.php?action=new" class="btn btn-success btn-xs btn-new" title="New"><span class="glyphicon glyphicon-plus"></span></a>
+                            <h3 class="panel-title">Reserva</h3>
                         </div>
                         <div class="panel-body">
-                            <ul class="list-group">
-                                <?php foreach ($salas as $sala): ?>
-                                    <li class="list-group-item">
-                                        <div class="row">
-                                            <div class="col-xs-10 col-md-11">
 
-                                                <div>
-                                                    <?= $sala['nome'] ?>
-                                                    <div class="mic-info">
-                                                       sala: <b><?= $sala['numero'] ?></b>
-                                                    </div>
-                                                </div>
-                                                <!--<div class="comment-text">
-                                                    Awesome design
-                                                </div>
-                                                -->
-                                                <div class="action">
-                                                    <a href="salas.php?action=edit&id=<?= $sala['id'] ?>" class="btn btn-primary btn-xs" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="reservas.php?action=reservar&id=<?= $sala['id'] ?>" class="btn btn-success btn-xs" title="reservar"><span class="glyphicon glyphicon-ok"></span></a>
-                                                    <a href="salas.php?action=delete&id=<?= $sala['id'] ?>" class="btn btn-danger btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></a>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
                         </div>
                     </div>
                 </div>
