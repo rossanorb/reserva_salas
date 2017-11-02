@@ -38,8 +38,13 @@
             border-top: 1px solid #ddd;
         }
 
+        .widget .btn-new {
+            float: right;
+            margin-right: 1%;
+        }
+
         .widget li.list-group-item:hover {
-            background-color: rgba(86, 61, 124, .1);
+            background-color: rgba(200, 200, 124, .1);
         }
 
         .widget .mic-info {
@@ -101,6 +106,7 @@
                             <span class="glyphicon glyphicon-user"></span>
                             <h3 class="panel-title">Usuários</h3>
                             <span class="label label-info"><?= count($usuarios) ?></span>
+                            <a href="user.php?action=new" class="btn btn-success btn-xs btn-new" title="New"><span class="glyphicon glyphicon-plus"></span></a>
                         </div>
                         <div class="panel-body">
                             <ul class="list-group">
@@ -123,8 +129,6 @@
                                                     <a href="user.php?action=edit&id=<?= $usuario['id'] ?>"
                                                        class="btn btn-primary btn-xs" title="Edit"><span
                                                             class="glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="user.php?action=new" class="btn btn-success btn-xs"
-                                                       title="New"><span class="glyphicon glyphicon-ok"></span></a>
                                                     <a href="user.php?action=delete&id=<?= $usuario['id'] ?>"
                                                        class="btn btn-danger btn-xs" title="Delete"><span
                                                             class="glyphicon glyphicon-trash"></span></a>

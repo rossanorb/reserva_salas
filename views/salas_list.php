@@ -44,7 +44,7 @@
         }
 
         .widget li.list-group-item:hover {
-            background-color: rgba(86, 61, 124, .1);
+            background-color: rgba(200, 200, 124, .1);
         }
 
         .widget .mic-info {

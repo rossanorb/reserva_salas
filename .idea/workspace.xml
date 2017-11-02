@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a4213e2-275b-4d8b-9fe0-3b949f2e1ce8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/salas_list.php" afterPath="$PROJECT_DIR$/views/salas_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user_list.php" afterPath="$PROJECT_DIR$/views/user_list.php" />
     </list>
     <ignored path="digitec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +28,18 @@
       <file leaf-file-name="salas_list.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/salas_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2183">
-              <caret line="108" column="149" selection-start-line="108" selection-start-column="149" selection-end-line="108" selection-end-column="149" />
+            <state relative-caret-position="512">
+              <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="46" column="54" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -57,13 +69,13 @@
         <option value="$PROJECT_DIR$/model/User.php" />
         <option value="$PROJECT_DIR$/asssets/css/salas.css" />
         <option value="$PROJECT_DIR$/user.php" />
-        <option value="$PROJECT_DIR$/views/user_list.php" />
         <option value="$PROJECT_DIR$/views/user_edit.php" />
         <option value="$PROJECT_DIR$/views/user_new.php" />
         <option value="$PROJECT_DIR$/views/salas.php" />
         <option value="$PROJECT_DIR$/views/sala_new.php" />
         <option value="$PROJECT_DIR$/salas.php" />
         <option value="$PROJECT_DIR$/model/Salas.php" />
+        <option value="$PROJECT_DIR$/views/user_list.php" />
         <option value="$PROJECT_DIR$/views/salas_list.php" />
       </list>
     </option>
@@ -235,12 +247,12 @@
       <workItem from="1509485174503" duration="8966000" />
       <workItem from="1509568083444" duration="20476000" />
       <workItem from="1509588635199" duration="1039000" />
-      <workItem from="1509624959590" duration="3987000" />
+      <workItem from="1509624959590" duration="4880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34468000" />
+    <option name="totallyTimeSpent" value="35361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -391,14 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/user_new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -461,10 +465,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/user_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/salas_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2183">
-          <caret line="108" column="149" selection-start-line="108" selection-start-column="149" selection-end-line="108" selection-end-column="149" />
+        <state relative-caret-position="512">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
           <folding />
         </state>
       </provider>
