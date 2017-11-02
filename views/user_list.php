@@ -12,17 +12,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style type="text/css">
-        body { padding-top:30px; }
-        .widget .panel-body { padding:0px; }
-        .widget .list-group { margin-bottom: 0; }
-        .widget .panel-title { display:inline }
-        .widget .label-info { float: right; }
-        .widget li.list-group-item {border-radius: 0;border: 0;border-top: 1px solid #ddd;}
-        .widget li.list-group-item:hover { background-color: rgba(86,61,124,.1); }
-        .widget .mic-info { color: #666666;font-size: 11px; }
-        .widget .action { margin-top:5px; }
-        .widget .comment-text { font-size: 12px; }
-        .widget .btn-block { border-top-left-radius:0px;border-top-right-radius:0px; }
+        body {
+            padding-top: 30px;
+        }
+
+        .widget .panel-body {
+            padding: 0px;
+        }
+
+        .widget .list-group {
+            margin-bottom: 0;
+        }
+
+        .widget .panel-title {
+            display: inline
+        }
+
+        .widget .label-info {
+            float: right;
+        }
+
+        .widget li.list-group-item {
+            border-radius: 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .widget li.list-group-item:hover {
+            background-color: rgba(86, 61, 124, .1);
+        }
+
+        .widget .mic-info {
+            color: #666666;
+            font-size: 11px;
+        }
+
+        .widget .action {
+            margin-top: 5px;
+        }
+
+        .widget .comment-text {
+            font-size: 12px;
+        }
+
+        .widget .btn-block {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
     </style>
 
 </head>
@@ -59,23 +95,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <?php foreach ($usuarios as $usuario): ?>
-                        <div class="panel panel-default widget">
-                            <div class="panel-heading">
-                                <span class="glyphicon glyphicon-user"></span>
-                                <h3 class="panel-title">Usuários</h3>
-                                <span class="label label-info"><?=count($usuarios)?></span>
-                            </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
+
+                    <div class="panel panel-default widget">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <h3 class="panel-title">Usuários</h3>
+                            <span class="label label-info"><?= count($usuarios) ?></span>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <?php foreach ($usuarios as $usuario): ?>
                                     <li class="list-group-item">
                                         <div class="row">
                                             <div class="col-xs-10 col-md-11">
 
                                                 <div>
-                                                    <?=$usuario['nome']?>
+                                                    <?= $usuario['nome'] ?>
                                                     <div class="mic-info">
-                                                        <?=$usuario['username']?>
+                                                        <?= $usuario['username'] ?>
                                                     </div>
                                                 </div>
                                                 <!--<div class="comment-text">
@@ -83,22 +120,25 @@
                                                 </div>
                                                 -->
                                                 <div class="action">
-                                                    <a href="user.php?action=edit&id=<?=$usuario['id']?>" class="btn btn-primary btn-xs" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="user.php?action=new" class="btn btn-success btn-xs" title="New"><span class="glyphicon glyphicon-ok"></span></a>
-                                                    <a href="user.php?action=delete&id=<?=$usuario['id']?>" class="btn btn-danger btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></a>
+                                                    <a href="user.php?action=edit&id=<?= $usuario['id'] ?>"
+                                                       class="btn btn-primary btn-xs" title="Edit"><span
+                                                            class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a href="user.php?action=new" class="btn btn-success btn-xs"
+                                                       title="New"><span class="glyphicon glyphicon-ok"></span></a>
+                                                    <a href="user.php?action=delete&id=<?= $usuario['id'] ?>"
+                                                       class="btn btn-danger btn-xs" title="Delete"><span
+                                                            class="glyphicon glyphicon-trash"></span></a>
                                                 </div>
 
 
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
-
-                            </div>
+                                <?php endforeach; ?>
+                            </ul>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>

@@ -58,11 +58,9 @@ switch ($action){
     case 'delete':
         if($_REQUEST['id']) {
             $user = new User();
-            $user->update('usuarios', $dados, " id = {$_REQUEST['id']} ");
-            header("Location:user.php?action=edit&id={$_REQUEST['id']}");
-        }else{
-            header("Location:user.php");
+            $user->delete('usuarios', " id = {$_REQUEST['id']} ");
         }
+        header("Location:user.php");
         break;
 
     default:

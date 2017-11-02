@@ -2,6 +2,8 @@
 
 class User{
 
+    private $name = 'usuarios';
+
     public function __construct(){
         $_SESSION['erros'] = [];
         $this->db = new PDO('mysql:host=localhost;port=3306;dbname=ditech', 'root', '102030');
