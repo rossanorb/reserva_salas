@@ -15,7 +15,7 @@ switch ($action){
         $date = DateTime::createFromFormat('d/m/Y',$_REQUEST['date'])->format('Y-m-d');
         $reserva = new Reservas();
         $hrs_reservados = $reserva->select(" data LIKE '%{$date}%' ");
-        $result['horarios'][] = $reserva->filtraHorarios($hrs_reservados);
+        $result = $reserva->filtraHorarios($hrs_reservados);
         echo json_encode($result);
         break;
 
