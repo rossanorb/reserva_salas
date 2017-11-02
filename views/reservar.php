@@ -7,9 +7,15 @@
     <title>Salas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="asssets/datepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">
     <link rel="stylesheet" href="asssets/css/salas.css">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="asssets/datepicker/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="asssets/datepicker/js/bootstrap-datetimepicker.js"></script>
 
     <style type="text/css">
         body {
@@ -107,7 +113,19 @@
                             <h3 class="panel-title">Reserva</h3>
                         </div>
                         <div class="panel-body">
+                            <div class="col-lg-12">
+                                <div style="overflow:hidden;">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div id="datetimepicker12"></div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="col-lg-12"></div>
                         </div>
                     </div>
                 </div>
@@ -120,6 +138,17 @@
 <!-- /#wrapper -->
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $('#datetimepicker12').datetimepicker({
+            locale: 'pt-BR',
+            inline: true,
+            format: 'DD/MM/YYYY'
+        });
+
+        $("#datetimepicker12").on("dp.change", function (e) {
+            let date = $('#datetimepicker12 td.day.active').attr('data-day')
+        });
+
         var trigger = $('.hamburger'),
             overlay = $('.overlay'),
             isClosed = false;
