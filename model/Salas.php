@@ -90,4 +90,14 @@ class Salas
 
     }
 
+    public function delete($where){
+        $sql = " DELETE FROM  $this->table WHERE $where ";
+        $delete = $this->db->query($sql);
+        if($delete) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 }

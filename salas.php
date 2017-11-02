@@ -45,6 +45,14 @@ switch ($action){
         }
         break;
 
+    case 'delete':
+        if($_REQUEST['id']) {
+            $sala = new Salas();
+            $sala->delete(" id = {$_REQUEST['id']} ");
+        }
+        header("Location:salas.php");
+        break;
+
     default:
         $model = new Salas();
         $salas = $model->select();

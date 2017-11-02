@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a4213e2-275b-4d8b-9fe0-3b949f2e1ce8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user_edit.php" afterPath="$PROJECT_DIR$/views/user_edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user_new.php" afterPath="$PROJECT_DIR$/views/user_new.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Salas.php" afterPath="$PROJECT_DIR$/model/Salas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/salas.php" afterPath="$PROJECT_DIR$/salas.php" />
     </list>
     <ignored path="digitec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,32 +25,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sala_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/sala_edit.php">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="96" />
+            <state relative-caret-position="259">
+              <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="77" selection-end-column="14" />
+              <folding>
+                <element signature="e#247#704#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="salas.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/salas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_new.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user_new.php">
+      <file leaf-file-name="Salas.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/Salas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="96" column="106" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="106" />
-              <folding />
+            <state relative-caret-position="451">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="9" />
+              <folding>
+                <element signature="n#select#0;n#Salas#0;n#!!top" expanded="false" />
+                <element signature="n#insert#0;n#Salas#0;n#!!top" expanded="false" />
+                <element signature="n#update#0;n#Salas#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_edit.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/user_edit.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-649">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="640">
+              <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+              <folding>
+                <element signature="n#valid#0;n#User#0;n#!!top" expanded="false" />
+                <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#User#0;n#!!top" expanded="false" />
+                <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,18 +97,18 @@
         <option value="$PROJECT_DIR$/views/register.php" />
         <option value="$PROJECT_DIR$/views/user_lista.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/model/User.php" />
         <option value="$PROJECT_DIR$/asssets/css/salas.css" />
         <option value="$PROJECT_DIR$/user.php" />
         <option value="$PROJECT_DIR$/views/salas.php" />
         <option value="$PROJECT_DIR$/views/user_list.php" />
         <option value="$PROJECT_DIR$/views/salas_list.php" />
-        <option value="$PROJECT_DIR$/model/Salas.php" />
-        <option value="$PROJECT_DIR$/salas.php" />
         <option value="$PROJECT_DIR$/views/sala_edit.php" />
         <option value="$PROJECT_DIR$/views/sala_new.php" />
         <option value="$PROJECT_DIR$/views/user_new.php" />
         <option value="$PROJECT_DIR$/views/user_edit.php" />
+        <option value="$PROJECT_DIR$/salas.php" />
+        <option value="$PROJECT_DIR$/model/Salas.php" />
+        <option value="$PROJECT_DIR$/model/User.php" />
       </list>
     </option>
   </component>
@@ -146,20 +168,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="digitec" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitec" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,12 +265,20 @@
       <workItem from="1509485174503" duration="8966000" />
       <workItem from="1509568083444" duration="20476000" />
       <workItem from="1509588635199" duration="1039000" />
-      <workItem from="1509624959590" duration="7550000" />
+      <workItem from="1509624959590" duration="8046000" />
     </task>
+    <task id="LOCAL-00001" summary="ajuste metodo delete user model">
+      <created>1509638934083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1509638934083</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38031000" />
+    <option name="totallyTimeSpent" value="38527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -297,6 +313,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajuste metodo delete user model" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste metodo delete user model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -430,30 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <element signature="n#valid#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Salas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
-          <folding>
-            <element signature="n#select#0;n#Salas#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#Salas#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/sala_new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -462,28 +458,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salas.php">
+    <entry file="file://$PROJECT_DIR$/views/user_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="69" selection-end-column="14" />
-          <folding>
-            <element signature="e#247#704#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/sala_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="96" />
+        <state relative-caret-position="-1888">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -496,11 +474,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user_edit.php">
+    <entry file="file://$PROJECT_DIR$/views/sala_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-649">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="547">
+          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="77" selection-end-column="14" />
+          <folding>
+            <element signature="e#247#704#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+          <folding>
+            <element signature="n#valid#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Salas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="9" />
+          <folding>
+            <element signature="n#select#0;n#Salas#0;n#!!top" expanded="false" />
+            <element signature="n#insert#0;n#Salas#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Salas#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
