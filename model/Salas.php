@@ -60,13 +60,34 @@ class Salas
             $valores = "'".implode("','", array_values($dados))."'";
 
             $sql = " INSERT INTO {$this->table} ({$campos}) values ({$valores}) ";
-            
+
             $this->db->query($sql);
             return ($this->db->lastInsertId());
 
         }
 
         return false;
+    }
+
+    public function update(array $dados , $where ){
+        if(is_string($where)){
+            foreach ($dados as $inds => $val){
+                $campos[]  = "  $inds = '$val' ";
+            }
+            $campos = implode(', ', $campos);
+
+            $sql = " UPDATE {$this->table} SET $campos  WHERE {$where} ";
+
+            $update = $this->db->query($sql);
+
+            if($update)
+                return true;
+            else
+                return false;
+        }else{
+            return false;
+        }
+
     }
 
 }

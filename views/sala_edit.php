@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
 
-    <title>Usuários</title>
+    <title>Salas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="asssets/css/salas.css">
@@ -68,27 +68,28 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default widget">
                         <div class="panel-heading">
-                            <span class="glyphicon glyphicon-user"></span>
-                            <h3 class="panel-title">Salas</h3>
+                            <span class="glyphicon glyphicon-book"></span>
+                            <h3 class="panel-title">Sala</h3>
                         </div>
                         <div class="panel-body">
                             <div class="col-lg-12">
 
                                 <div class="form-wrap">
 
-                                    <form role="form" action="salas.php?action=save" method="post" id="login-form" autocomplete="off">
+                                    <form role="form" action="salas.php?action=update&id=<?=$sala['id']?>" method="post" id="login-form" >
 
-                                        <div class="form-group">
-                                            <label for="nome">Nome</label>
-                                            <input name="nome" id="nome" class="form-control" placeholder="nome" type="text" value="">
-                                        </div>
+                                    <div class="form-group">
+                                        <label for="nome">Nome</label>
+                                        <input name="nome" id="nome" class="form-control" placeholder="nome" type="text" value="<?=$sala['nome']?>">
+                                    </div>
 
-                                        <div class="form-group">
-                                            <label for="username">Número</label>
-                                            <input name="numero" id="numero" class="form-control" placeholder="número" type="text" value="">
-                                        </div>
-                                        <input id="btn-login" class="btn btn-success" value="Salvar" type="submit">
-                                        <a href="salas.php" class="btn btn-primary">Listar Salas</a>
+                                    <div class="form-group">
+                                        <label for="username">Número</label>
+                                        <input name="numero" id="numero" class="form-control" placeholder="numero" type="text" value="<?=$sala['numero']?>">
+                                    </div>
+
+                                    <input id="btn-login" class="btn btn-success" value="Salvar" type="submit">
+                                    <a href="salas.php" class="btn btn-primary">Listar Salas</a>
                                     </form>
 
 
