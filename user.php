@@ -29,6 +29,20 @@ switch ($action){
 
         break;
 
+    case 'new':
+        include('views/user_new.php');
+        break;
+
+    case 'save':
+        $user = new User();
+        $status = $user->insert('usuarios',[
+            'nome' => $_REQUEST['nome'],
+            'username' => $_REQUEST['username'],
+            'password' => $_REQUEST['password']
+        ]);
+        header("Location:user.php");
+        break;
+
     case 'edit':
         if($_REQUEST['id']) {
             $user = new User();
