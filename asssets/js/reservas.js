@@ -8,7 +8,7 @@ function get_sala_reservada(h, horarios_ocupados){
 
 function render_table(data){
     let horarios_ocupados = JSON.parse(data);
-    //console.log(horarios_ocupados['info_salas'][0])
+
     $(".lista-horarios div").remove();
 
     $(".lista-horarios").append(`<div class="col-md-6 column1"></div><div class="col-md-6 column2"></div>`);
@@ -87,4 +87,9 @@ $(document).ready(function () {
         let date = $('#datetimepicker td.day.active').attr('data-day')
         busca_horarios(date);
     });
+
+    $('html').on('click',".lista-horarios .hora:not('.reservado')", function(){
+        $(".lista-horarios .hora:not('.reservado')").css('background-color','#66c03733');
+        $(this).css('background-color','#c1dec1');
+    })
 });

@@ -140,7 +140,10 @@
                                             <div class="col-md-6">
                                                 <div id="datetimepicker"></div>
                                             </div>
-                                            <div class="col-md-6 lista-horarios"></div>
+                                            <div style="min-height: 360px;" class="col-md-6 lista-horarios"></div>
+                                            <div class="col-md-12">
+                                                <button type="button" class="btn btn-success">Reservar</button>
+                                            </div>
                                         </div>
                                     </div>
 
