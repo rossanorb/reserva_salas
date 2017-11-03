@@ -46,6 +46,7 @@ function render_table(data){
 }
 
 function busca_horarios(date) {
+    console.log( date )
     $.ajax({
         url: 'reservas.php',
         type: 'GET',
@@ -107,7 +108,9 @@ $(document).ready(function () {
                     hora: $('#hora').val(),
                 },
                 success: function(data) {
-                    render_table(data);
+                    let resposta = JSON.parse(data);
+                    busca_horarios( $('#data').val() );
+                    alert(resposta.mensagem);
                 },
                 statusCode: {
                     404: function() {
