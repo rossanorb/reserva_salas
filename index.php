@@ -23,7 +23,17 @@ switch ($action) {
             $_SESSION['user'] = $_REQUEST['username'];
             header("Location:index.php?action=register");
         }else{
-            header("Location:salas.php");
+            $user = new User();
+            $user = $user->select('usuarios', " username = '{$_REQUEST['username']}' and password = '{$_REQUEST['password']}' ");
+            if($user){
+                $_SESSION['user'] = [
+                    'id' => $user['id'],
+                    'nome' => $user['nome'],
+                    'username' => $user['username']
+                ];
+                header("Location:salas.php");
+                exit();
+            }
         }
 
         break;
