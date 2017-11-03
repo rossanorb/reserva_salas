@@ -90,6 +90,18 @@
         div.hora.reservado {
             background: #c0373733;
         }
+
+        .info-sala li{
+            list-style: square;
+        }
+
+        .reservas > div > ul{
+            background-color: #f6f6f6;
+        }
+
+        .reservas > div > ul li{
+            line-height: 25px;
+        }
     </style>
 
 </head>
@@ -136,13 +148,22 @@
                             <div class="col-lg-12">
                                 <div style="overflow:hidden;">
                                     <div class="form-group">
+
                                         <div class="row reservas">
+
+                                            <div class="col-md-12">
+                                                <ul class="info-sala">
+                                                    <li><?=$sala['nome'] ?></li>
+                                                    <li><?=$sala['numero']?></li>
+                                                </ul>
+                                            </div>
+
                                             <div class="col-md-6">
                                                 <div id="datetimepicker"></div>
                                             </div>
                                             <div style="min-height: 360px;" class="col-md-6 lista-horarios"></div>
                                             <div class="col-md-12">
-                                                <button type="button" class="btn btn-success">Reservar</button>
+                                                <button type="button" id="btn-reservar" class="btn btn-success">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -156,6 +177,9 @@
         </div>
     </div>
     <!-- /#page-content-wrapper -->
+    <input type="text" id="id_sala" value="<?=$sala['id']?>">
+    <input type="text" id="data" value="">
+    <input type="text" id="hora" value="">
 
 </div>
 <!-- /#wrapper -->

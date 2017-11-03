@@ -85,11 +85,46 @@ $(document).ready(function () {
 
     $("#datetimepicker").on("dp.change", function (e) {
         let date = $('#datetimepicker td.day.active').attr('data-day')
+        $('#data').val(date)
         busca_horarios(date);
     });
 
     $('html').on('click',".lista-horarios .hora:not('.reservado')", function(){
+        $('#hora').val( $(this).text() );
         $(".lista-horarios .hora:not('.reservado')").css('background-color','#66c03733');
         $(this).css('background-color','#c1dec1');
     })
+
+    $('#btn-reservar').on('click',function(){
+        if($('#id_sala').val() && $('#data').val() && $('#hora').val() ){
+            $.ajax({
+                url: 'reservas.php',
+                type: 'POST',
+                data:{
+                    action: 'reservar',
+                    id_sala: $('#id_sala').val(),
+                    data: $('#data').val(),
+                    hora: $('#hora').val(),
+                },
+                success: function(data) {
+                    render_table(data);
+                },
+                statusCode: {
+                    404: function() {
+                        console.log('recurso não disponível')
+                    },
+                    419: function() {
+                        console.log('status desconhecido')
+                    },
+                    403: function() {
+                        console.log('sem permissão')
+                    },
+                    500: function() {
+                        console.log('erro interno')
+                    }
+                }
+            });
+        }
+
+    });
 });

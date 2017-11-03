@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a4213e2-275b-4d8b-9fe0-3b949f2e1ce8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asssets/js/reservas.js" afterPath="$PROJECT_DIR$/asssets/js/reservas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reservas.php" afterPath="$PROJECT_DIR$/reservas.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/reservar.php" afterPath="$PROJECT_DIR$/views/reservar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/salas_list.php" afterPath="$PROJECT_DIR$/views/salas_list.php" />
     </list>
     <ignored path="digitec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,43 +30,47 @@
       <file leaf-file-name="reservas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asssets/js/reservas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
+            <state relative-caret-position="480">
+              <caret line="103" column="37" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="37" />
               <folding>
-                <element signature="n#!!block;n#busca_horarios#0" expanded="false" />
+                <element signature="e#3560#4048#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reservar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reservar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/reservar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="142" column="71" selection-start-line="142" selection-start-column="71" selection-end-line="142" selection-end-column="71" />
+            <state relative-caret-position="5728">
+              <caret line="179" column="51" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="51" />
               <folding>
-                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1509711701132" expanded="true" signature="4078:5096" ph="..." />
+                <marker date="1509711701132" expanded="true" signature="4554:4685" ph="..." />
+                <marker date="1509711701132" expanded="true" signature="4743:4761" ph="..." />
+                <marker date="1509711701132" expanded="true" signature="4868:5049" ph="..." />
+                <marker date="1509711701132" expanded="true" signature="5653:5716" ph="..." />
+                <marker date="1509711701132" expanded="true" signature="5689:5716" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reservas.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reservas.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reservas.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="salas.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/salas.php">
+      <file leaf-file-name="salas_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/salas_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="25" column="62" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="62" />
+            <state relative-caret-position="447">
+              <caret line="129" column="89" selection-start-line="129" selection-start-column="81" selection-end-line="129" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -72,7 +79,7 @@
       <file leaf-file-name="Reservas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Reservas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="323">
               <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding />
             </state>
@@ -112,11 +119,11 @@
         <option value="$PROJECT_DIR$/salas.php" />
         <option value="$PROJECT_DIR$/model/Salas.php" />
         <option value="$PROJECT_DIR$/model/User.php" />
-        <option value="$PROJECT_DIR$/views/salas_list.php" />
         <option value="$PROJECT_DIR$/model/Reservas.php" />
-        <option value="$PROJECT_DIR$/reservas.php" />
         <option value="$PROJECT_DIR$/asssets/js/reservas.js" />
+        <option value="$PROJECT_DIR$/views/salas_list.php" />
         <option value="$PROJECT_DIR$/views/reservar.php" />
+        <option value="$PROJECT_DIR$/reservas.php" />
       </list>
     </option>
   </component>
@@ -241,8 +248,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,7 +328,8 @@
       <workItem from="1509485174503" duration="8966000" />
       <workItem from="1509568083444" duration="20476000" />
       <workItem from="1509588635199" duration="1039000" />
-      <workItem from="1509624959590" duration="38799000" />
+      <workItem from="1509624959590" duration="39305000" />
+      <workItem from="1509707592960" duration="4333000" />
     </task>
     <task id="LOCAL-00001" summary="ajuste metodo delete user model">
       <created>1509638934083</created>
@@ -337,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509663210294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adicionado metodo reservar">
+      <created>1509711401543</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509711401543</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69280000" />
+    <option name="totallyTimeSpent" value="74119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -380,18 +395,70 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajuste metodo delete user model" />
     <MESSAGE value="correção retorno json" />
-    <option name="LAST_COMMIT_MESSAGE" value="correção retorno json" />
+    <MESSAGE value="adicionado metodo reservar" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionado metodo reservar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/asssets/js/reservas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1952">
+          <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
+          <folding>
+            <element signature="e#3560#4048#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/reservar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509711701132" expanded="true" signature="4078:5096" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="4554:4685" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="4743:4761" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="4868:5049" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="5653:5716" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="5689:5716" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reservas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Reservas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#247#704#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -415,7 +482,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2176">
           <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#247#704#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -447,10 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1568">
           <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding>
-            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +522,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#247#704#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -538,12 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-          <folding>
-            <element signature="n#valid#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#User#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -561,15 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9472">
           <caret line="296" column="1" selection-start-line="296" selection-start-column="1" selection-end-line="296" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/salas_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3744">
-          <caret line="117" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,27 +635,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asssets/js/reservas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
-          <folding>
-            <element signature="n#!!block;n#busca_horarios#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reservas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/salas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
+        <state relative-caret-position="32">
           <caret line="25" column="62" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="62" />
           <folding />
         </state>
@@ -612,20 +645,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Reservas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="323">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asssets/js/reservas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="37" />
+          <folding>
+            <element signature="e#3560#4048#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/salas_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="129" column="89" selection-start-line="129" selection-start-column="81" selection-end-line="129" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/reservar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="142" column="71" selection-start-line="142" selection-start-column="71" selection-end-line="142" selection-end-column="71" />
+        <state relative-caret-position="5728">
+          <caret line="179" column="51" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="51" />
           <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1509711701132" expanded="true" signature="4078:5096" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="4554:4685" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="4743:4761" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="4868:5049" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="5653:5716" ph="..." />
+            <marker date="1509711701132" expanded="true" signature="5689:5716" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reservas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

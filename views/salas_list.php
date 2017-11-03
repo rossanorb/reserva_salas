@@ -127,7 +127,7 @@
                                                 -->
                                                 <div class="action">
                                                     <a href="salas.php?action=edit&id=<?= $sala['id'] ?>" class="btn btn-primary btn-xs" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="reservas.php?action=reservar&id=<?= $sala['id'] ?>" class="btn btn-success btn-xs" title="reservar"><span class="glyphicon glyphicon-ok"></span></a>
+                                                    <a href="reservas.php?action=reservas&id=<?= $sala['id'] ?>" class="btn btn-success btn-xs" title="reservar"><span class="glyphicon glyphicon-ok"></span></a>
                                                     <a href="salas.php?action=delete&id=<?= $sala['id'] ?>" class="btn btn-danger btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></a>
                                                 </div>
 

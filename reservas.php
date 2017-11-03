@@ -8,7 +8,9 @@ include('model/Salas.php');
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 
 switch ($action){
-    case 'reservar':
+    case 'reservas':
+        $sala = new Salas();
+        $sala = $sala->select(" id = {$_REQUEST['id']} ");
         include('views/reservar.php');
         break;
 
