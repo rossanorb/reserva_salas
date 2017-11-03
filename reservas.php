@@ -29,6 +29,9 @@ switch ($action){
 
         echo json_encode($result);
         break;
+    case 'reservar':
+
+        break;
 
     default:
         break;
