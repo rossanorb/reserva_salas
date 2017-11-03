@@ -29,6 +29,7 @@ switch ($action){
         }
 
         $result['info_salas'] = $salas_reservadas;
+        $result['user_session_id'] = $_SESSION['user']['id'];
 
         echo json_encode($result);
         break;
