@@ -90,7 +90,7 @@ $(document).ready(function () {
     });
 
     $('html').on('click',".lista-horarios .hora:not('.reservado')", function(){
-        $('#hora').val( $(this).text() );
+        $('#hora').val($(this).text());
         $(".lista-horarios .hora:not('.reservado')").css('background-color','#66c03733');
         $(this).css('background-color','#c1dec1');
     })
@@ -103,7 +103,7 @@ $(document).ready(function () {
                 data:{
                     action: 'reservar',
                     id_sala: $('#id_sala').val(),
-                    data: $('#data').val(),
+                    date: $('#data').val(),
                     hora: $('#hora').val(),
                 },
                 success: function(data) {
