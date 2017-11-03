@@ -26,7 +26,7 @@ function render_table(data){
                 classe = 'reservado';
                 if(horarios_ocupados['info_salas'][sala['id_sala']]){
                     if(sala['id_user'] == horarios_ocupados['user_session_id'] ){
-                        remove = `<i id=""  class="glyphicon glyphicon-remove">`;
+                        remove = `<i id="${horarios_ocupados['info_salas'][sala['id_sala']]['id']}"  class="glyphicon glyphicon-remove">`;
                     }
                     dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']} `;
                 }
@@ -39,7 +39,7 @@ function render_table(data){
                 classe = 'reservado';
                 if(horarios_ocupados['info_salas'][sala['id_sala']]){
                     if(sala['id_user'] == horarios_ocupados['user_session_id'] ){
-                        remove = `<i id=""  class="glyphicon glyphicon-remove">`;
+                        remove = `<i id="${horarios_ocupados['info_salas'][sala['id_sala']]['id']}"  class="glyphicon glyphicon-remove">`;
                     }
                     dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']}</i>`;
                 }
