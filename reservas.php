@@ -4,6 +4,7 @@ session_start();
 
 include('model/Reservas.php');
 include('model/Salas.php');
+include('Rules.php');
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 
@@ -34,6 +35,15 @@ switch ($action){
     case 'reservar':
         $reserva = new Reservas();
         $date = DateTime::createFromFormat('d/m/Y',$_REQUEST['date'])->format('Y-m-d') .' '. trim($_REQUEST['hora']).':00';
+
+        if(Rules::is_reservada($date)){
+            echo json_encode([
+                'status' => false,
+                'mensagem' => 'Já existe reserva para esse horário'
+            ]);
+            exit();
+        }
+
         $id = $reserva->insert([
             'id_sala' => $_REQUEST['id_sala'],
             'id_user' => $_SESSION['user']['id'],
