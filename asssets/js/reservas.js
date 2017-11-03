@@ -77,6 +77,9 @@ function busca_horarios(date) {
     });
 }
 
+let date = new Date();
+busca_horarios(`${date.getDate()}/${date.getMonth() + 1 }/${date.getFullYear()}`);
+
 $(document).ready(function () {
     $('#datetimepicker').datetimepicker({
         locale: 'pt-BR',
