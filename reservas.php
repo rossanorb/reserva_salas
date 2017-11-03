@@ -32,7 +32,15 @@ switch ($action){
         echo json_encode($result);
         break;
     case 'reservar':
-
+        $reserva = new Reservas();
+        $date = DateTime::createFromFormat('d/m/Y',$_REQUEST['date'])->format('Y-m-d') .' '. trim($_REQUEST['hora']).':00';
+        /*
+        $reserva->update([
+            'id_sala' => $_REQUEST['id_sala'],
+            'id_user' => $_SESSION['user'],
+            'data' => $date
+        ]);
+        */
         break;
 
     default:
