@@ -182,9 +182,9 @@
         </div>
     </div>
     <!-- /#page-content-wrapper -->
-    <input type="text" id="id_sala" value="<?=$sala['id']?>">
-    <input type="text" id="data" value="">
-    <input type="text" id="hora" value="">
+    <input type="hidden" id="id_sala" value="<?=$sala['id']?>">
+    <input type="hidden" id="data" value="">
+    <input type="hidden" id="hora" value="">
 
 </div>
 <!-- /#wrapper -->
