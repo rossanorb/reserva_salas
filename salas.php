@@ -1,8 +1,8 @@
 <?php
+session_start();
+include('partials/controle_acesso.php');
 
 include('model/Salas.php');
-
-session_start();
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 

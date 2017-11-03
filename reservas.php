@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+include('partials/controle_acesso.php');
 
 include('model/Reservas.php');
 include('model/Salas.php');

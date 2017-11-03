@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('partials/controle_acesso.php');
 
 include ('model/User.php');
 
