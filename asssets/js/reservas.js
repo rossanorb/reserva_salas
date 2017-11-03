@@ -141,4 +141,21 @@ $(document).ready(function () {
         }
 
     });
+
+    $('html').on('click','i.glyphicon-remove',function(){
+        $.ajax({
+            url: 'reservas.php',
+            type: 'POST',
+            data:{
+                action: 'delete',
+                id: $(this).attr('id')
+            },
+            success: function(data) {
+                let resposta = JSON.parse(data);
+                busca_horarios( $('#data').val() );
+                alert(resposta.mensagem);
+            },
+        });
+    });
+
 });
