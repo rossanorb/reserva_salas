@@ -1,32 +1,44 @@
 
-function is_reservado(h, horarios_ocupados){
+function get_sala_reservada(h, horarios_ocupados){
     for(i =0; i < horarios_ocupados.length; i++){
-        if(horarios_ocupados[i]['data'] == h) return true;
+        if(horarios_ocupados[i]['data'] == h) return horarios_ocupados[i];
     }
     return false;
 }
 
 function render_table(data){
     let horarios_ocupados = JSON.parse(data);
-
+    //console.log(horarios_ocupados['info_salas'][0])
     $(".lista-horarios div").remove();
 
     $(".lista-horarios").append(`<div class="col-md-6 column1"></div><div class="col-md-6 column2"></div>`);
 
+
     for(let i=0; i < 24; i++){
         let h = String(i).length < 2 ? `0${i}:00` : `${i}:00` ;
         let classe = "";
+        let dados_sala = "";
 
         if(i > 11){
-            if( is_reservado(i, horarios_ocupados) == true ){
+            let sala = get_sala_reservada(i, horarios_ocupados['salas_reservadas']);
+            if(sala){
                 classe = 'reservado';
+                if(horarios_ocupados['info_salas'][sala['id_sala']]){
+                    dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']} `;
+                }
             }
-            $(".lista-horarios div.column2").append(`<div class="hora ${classe}">${h}</div>`);
+
+            $(".lista-horarios div.column2").append(`<div class="hora ${classe}">${h} ${dados_sala}</div>`);
         }else{
-            if( is_reservado(i, horarios_ocupados) == true ){
+            let sala = get_sala_reservada(i, horarios_ocupados['salas_reservadas']);
+            if(sala){
                 classe = 'reservado';
+                if(horarios_ocupados['info_salas'][sala['id_sala']]){
+                    dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']} `;
+                }
             }
-            $(".lista-horarios div.column1").append(`<div class="hora ${classe}">${h}</div>`);
+
+            $(".lista-horarios div.column1").append(`<div class="hora ${classe}">${h} ${dados_sala}</div>`);
         }
 
     }
