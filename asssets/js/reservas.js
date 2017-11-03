@@ -124,6 +124,8 @@ $(document).ready(function () {
                     }
                 }
             });
+        }else{
+            alert('selecione uma data e um horário');
         }
 
     });
