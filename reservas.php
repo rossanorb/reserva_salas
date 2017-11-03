@@ -34,13 +34,24 @@ switch ($action){
     case 'reservar':
         $reserva = new Reservas();
         $date = DateTime::createFromFormat('d/m/Y',$_REQUEST['date'])->format('Y-m-d') .' '. trim($_REQUEST['hora']).':00';
-        /*
-        $reserva->update([
+        $id = $reserva->insert([
             'id_sala' => $_REQUEST['id_sala'],
-            'id_user' => $_SESSION['user'],
+            'id_user' => $_SESSION['user']['id'],
             'data' => $date
         ]);
-        */
+
+        if($id){
+            echo json_encode([
+                'status' => true,
+                'mensagem' => 'Reserva realizada com sucesso!'
+            ]);
+        }else{
+            echo json_encode([
+                'status' => false,
+                'mensagem' => 'Não foi possível realizar a reserva da sala'
+            ]);
+        }
+        
         break;
 
     default:

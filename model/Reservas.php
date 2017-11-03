@@ -60,4 +60,20 @@ class Reservas{
 
     }
 
+    public function insert(array $dados){
+
+        try{
+            $campos = implode(",", array_keys($dados));
+            $valores = "'".implode("','", array_values($dados))."'";
+
+            $sql = " INSERT INTO {$this->table} ({$campos}) values ({$valores}) ";
+
+            $this->db->query($sql);
+            return ($this->db->lastInsertId());
+        }catch (Exception $e){
+            return false;
+        }
+
+    }
+
 }
