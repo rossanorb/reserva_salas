@@ -86,6 +86,10 @@
             margin: 1%;
             cursor: pointer;
         }
+
+        div.hora.reservado {
+            background: #c0373733;
+        }
     </style>
 
 </head>
@@ -133,12 +137,10 @@
                                 <div style="overflow:hidden;">
                                     <div class="form-group">
                                         <div class="row reservas">
-                                            <div class="col-md-8">
+                                            <div class="col-md-6">
                                                 <div id="datetimepicker"></div>
                                             </div>
-                                            <div class="col-md-4 lista-horarios">
-
-                                            </div>
+                                            <div class="col-md-6 lista-horarios"></div>
                                         </div>
                                     </div>
 
