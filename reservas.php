@@ -65,6 +65,24 @@ switch ($action){
         
         break;
 
+    case 'delete':
+        if(Rules::can_delete($_REQUEST)){
+            $reserva = new Reservas();
+            $reserva->delete(" id = " . Rules::getReserva()['id']);
+            echo json_encode([
+                'status' => true,
+                'mensagem' => 'reserva da sala cancelada com sucesso!'
+            ]);
+            exit();
+        }else{
+            echo json_encode([
+                'status' => false,
+                'mensagem' => 'reserva da sala não pôde ser cancelada '
+            ]);
+            exit();
+        }
+        break;
+
     default:
         break;
 }

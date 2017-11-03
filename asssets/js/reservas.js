@@ -26,7 +26,7 @@ function render_table(data){
                 classe = 'reservado';
                 if(horarios_ocupados['info_salas'][sala['id_sala']]){
                     if(sala['id_user'] == horarios_ocupados['user_session_id'] ){
-                        remove = `<i id="${horarios_ocupados['info_salas'][sala['id_sala']]['id']}"  class="glyphicon glyphicon-remove">`;
+                        remove = `<i id_sala="${horarios_ocupados['info_salas'][sala['id_sala']]['id']}" horario="${i}" class="glyphicon glyphicon-remove">`;
                     }
                     dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']} `;
                 }
@@ -39,7 +39,7 @@ function render_table(data){
                 classe = 'reservado';
                 if(horarios_ocupados['info_salas'][sala['id_sala']]){
                     if(sala['id_user'] == horarios_ocupados['user_session_id'] ){
-                        remove = `<i id="${horarios_ocupados['info_salas'][sala['id_sala']]['id']}"  class="glyphicon glyphicon-remove">`;
+                        remove = `<i id_sala="${horarios_ocupados['info_salas'][sala['id_sala']]['id']}" horario="${i}" class="glyphicon glyphicon-remove">`;
                     }
                     dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']}</i>`;
                 }
@@ -84,7 +84,9 @@ function busca_horarios(date) {
 }
 
 let date = new Date();
-busca_horarios(`${date.getDate()}/${date.getMonth() + 1 }/${date.getFullYear()}`);
+date = `${date.getDate()}/${date.getMonth() + 1 }/${date.getFullYear()}`;
+$('#data').val(date);
+busca_horarios(date);
 
 $(document).ready(function () {
     $('#datetimepicker').datetimepicker({
@@ -143,12 +145,18 @@ $(document).ready(function () {
     });
 
     $('html').on('click','i.glyphicon-remove',function(){
+        let h = $(this).attr('horario');
+        console.log(h)
+        let hora = String(h).length < 2 ? `0${h}:00` : `${h}:00` ;
+        console.log(hora)
+
         $.ajax({
             url: 'reservas.php',
             type: 'POST',
             data:{
                 action: 'delete',
-                id: $(this).attr('id')
+                id_sala: $(this).attr('id_sala'),
+                data: $('#data').val()+' '+hora
             },
             success: function(data) {
                 let resposta = JSON.parse(data);
