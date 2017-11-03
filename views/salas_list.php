@@ -72,22 +72,7 @@
     <div class="overlay"></div>
 
     <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    Brand
-                </a>
-            </li>
-            <li>
-                <a href="salas.php">Salas</a>
-            </li>
-            <li>
-                <a href="user.php?action=lista">Usuários</a>
-            </li>
-
-        </ul>
-    </nav>
+    <?php echo realpath(include('./partials/sidebar.php')) ?>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
