@@ -52,7 +52,7 @@
                         <div class="col-md-12 control">
                             <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%">
 
-                                <a href="user.php?action=register">
+                                <a href="index.php?action=register">
                                     Cadastrar-se
                                 </a>
                             </div>

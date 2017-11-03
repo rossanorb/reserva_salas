@@ -7,28 +7,6 @@ $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 
 
 switch ($action){
-    case 'register':
-        include('views/register.php');
-        session_destroy();
-        break;
-
-    case 'do_register':
-        $user = new User();
-        $status = $user->insert('usuarios',[
-           'nome' => $_REQUEST['nome'],
-           'username' => $_REQUEST['username'],
-           'password' => $_REQUEST['password']
-        ]);
-
-        if(!$status){
-            $_SESSION['user'] = $_REQUEST['username'];
-            header("Location:User.php?action=register");
-        }else{
-            header("Location:salas.php");
-        }
-
-        break;
-
     case 'new':
         include('views/user_new.php');
         break;

@@ -37,7 +37,7 @@ $display = count($erros) > 0 ? 'block':'none';
                     </ul>
                 </div>
 
-                <form id="register" class="form-horizontal" role="form" method="post" action="user.php?action=do_register">
+                <form id="register" class="form-horizontal" role="form" method="post" action="index.php?action=do_register">
 
                     <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
