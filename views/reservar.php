@@ -82,6 +82,7 @@
         div.hora {
             background: #66c03733;
             border: 1px solid #b5c2aecc;
+            padding-top: 8px;
             padding: 1%;
             margin: 1%;
             cursor: pointer;
@@ -101,6 +102,10 @@
 
         .reservas > div > ul li{
             line-height: 25px;
+        }
+
+        i.glyphicon-remove::before{
+            color:red;
         }
     </style>
 

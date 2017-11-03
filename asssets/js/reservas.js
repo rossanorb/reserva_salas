@@ -18,27 +18,34 @@ function render_table(data){
         let h = String(i).length < 2 ? `0${i}:00` : `${i}:00` ;
         let classe = "";
         let dados_sala = "";
+        let remove = "";
 
         if(i > 11){
             let sala = get_sala_reservada(i, horarios_ocupados['salas_reservadas']);
             if(sala){
                 classe = 'reservado';
                 if(horarios_ocupados['info_salas'][sala['id_sala']]){
+                    if(sala['id_user'] == horarios_ocupados['user_session_id'] ){
+                        remove = `<i id=""  class="glyphicon glyphicon-remove">`;
+                    }
                     dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']} `;
                 }
             }
 
-            $(".lista-horarios div.column2").append(`<div class="hora ${classe}">${h} ${dados_sala}</div>`);
+            $(".lista-horarios div.column2").append(`<div class="hora ${classe}">${remove} ${h} ${dados_sala}</div>`);
         }else{
             let sala = get_sala_reservada(i, horarios_ocupados['salas_reservadas']);
             if(sala){
                 classe = 'reservado';
                 if(horarios_ocupados['info_salas'][sala['id_sala']]){
-                    dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']} `;
+                    if(sala['id_user'] == horarios_ocupados['user_session_id'] ){
+                        remove = `<i id=""  class="glyphicon glyphicon-remove">`;
+                    }
+                    dados_sala = `:${horarios_ocupados['info_salas'][sala['id_sala']]['nome']} | ${horarios_ocupados['info_salas'][sala['id_sala']]['numero']}</i>`;
                 }
             }
 
-            $(".lista-horarios div.column1").append(`<div class="hora ${classe}">${h} ${dados_sala}</div>`);
+            $(".lista-horarios div.column1").append(`<div class="hora ${classe}">${remove} ${h} ${dados_sala}</div>`);
         }
 
     }
